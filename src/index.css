@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --color-primary: #0284c7; /* Professional Sky Blue (Sky 600) */
+  --color-primary-dark: #0369a1; /* Even darker Sky Blue (Sky 700) */
+  --color-primary-light: #38bdf8; /* Brighter Sky Blue (Sky 400) */
+  --color-accent: #F5A623; /* Classic Academic Gold */
+  --color-accent-dark: #D48C1B;
+  --color-accent-glow: rgba(245, 166, 35, 0.5);
+  --color-bg-light: #ffffff;
+  --color-bg-surface: #f8fafc; /* Slate 50 */
+  --color-glass: rgba(255, 255, 255, 0.85);
+  --color-glass-border: rgba(2, 132, 199, 0.1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply antialiased text-slate-600 bg-white selection:bg-accent selection:text-white;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-slate-900;
+  }
+}
+
+@layer utilities {
+  .glass-card {
+    @apply bg-white/90 backdrop-blur-xl border border-slate-200 shadow-xl shadow-slate-200/50;
+  }
+  
+  .glass-card-hover {
+    @apply hover:bg-white hover:border-primary/20 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-1;
+  }
+  
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-primary-light;
+  }
+  
+  .text-gradient-accent {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-accent via-yellow-500 to-amber-500;
+  }
+
+  .aura-blob {
+    @apply absolute rounded-full blur-[140px] opacity-30 pointer-events-none mix-blend-multiply;
+  }
+  
+  .border-beam {
+    @apply absolute inset-0 rounded-2xl border border-transparent;
+    background: linear-gradient(90deg, transparent, rgba(2, 132, 199, 0.1), transparent) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .animate-float-delayed {
+    animation: float 6s ease-in-out 3s infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0) scale(1); }
+    50% { transform: translateY(-20px) scale(1.02); }
+  }
+  
+  @keyframes glow {
+    0% { box-shadow: 0 0 15px var(--color-accent-glow); }
+    100% { box-shadow: 0 0 35px var(--color-accent-glow), 0 0 15px inset var(--color-accent-glow); }
+  }
+}
