@@ -1420,7 +1420,7 @@ export default function App() {
               <div className="mb-20">
                 <div className="rounded-[3rem] overflow-hidden bg-white border border-slate-200 shadow-sm p-4 relative z-20 mb-6">
                   <iframe 
-                    src="https://maps.google.com/maps?q=Ramsnehi+Dham,+Near+Suman+Hospital,+Etah+Chungi,+Aligarh&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                    src="https://maps.google.com/maps?q=JMD+Saksham+Classes,+Aligarh&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                     width="100%" 
                     height="400" 
                     style={{ border: 0 }} 
