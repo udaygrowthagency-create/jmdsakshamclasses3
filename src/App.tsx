@@ -834,7 +834,7 @@ export default function App() {
                 Structured Learning
               </span>
               <h2 className="text-5xl md:text-8xl font-black text-slate-900 mb-10 tracking-tighter leading-[1.05]">
-                Academic Plan <br /><span className="text-gradient">2025-26</span>
+                Academic Plan <br /><span className="text-gradient">2026-27</span>
               </h2>
               <div className="space-y-6">
                 {[
@@ -954,7 +954,7 @@ export default function App() {
 
                 <div className="space-y-8 relative z-10">
                   {[
-                    { date: '05 April', title: 'New Batch starting for AMU Entrance 2025-26.', isNew: true },
+                    { date: '05 April', title: 'New Batch starting for AMU Entrance 2026-27.', isNew: true },
                     { date: '10 April', title: 'Scholarship Test (SAPT) Phase-II Registration Open.', isNew: true },
                     { date: '15 April', title: 'Parent-Teacher Meeting for Class 9th & 10th.', isNew: false },
                     { date: '20 April', title: 'Special Workshop on Time Management for Board Exams.', isNew: false }
