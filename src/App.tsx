@@ -147,7 +147,7 @@ export default function App() {
 
   const navLinks = [
     { name: 'About Us', href: '#about' },
-    { name: 'SAPT 2026-27', href: '#sapt' },
+    { name: 'SAPT', href: '#sapt' },
     { name: 'Courses', href: '#courses' },
     { name: 'Scholarship', href: '#scholarship' },
     { name: 'Results', href: '#results' },
@@ -599,7 +599,7 @@ export default function App() {
                 Annual Entrance Test
               </span>
               <h2 className="text-5xl md:text-8xl font-black mb-8 tracking-tighter leading-[1.05] text-slate-900">
-                SAPT <span className="text-gradient">2026-27</span>
+                <span className="text-gradient">SAPT</span>
               </h2>
               <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium">
                 11th Annual Academic Assessment Program - Your Gateway to Excellence
