@@ -1042,30 +1042,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* Syllabus Section */}
-      <section className="py-24 bg-primary relative overflow-hidden">
-        <div className="absolute inset-0 bg-white/5 opacity-20"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter">AMU & Sainik School <br /><span className="text-blue-200 drop-shadow-sm">Entrance Syllabus</span></h2>
-            <div className="w-20 h-1.5 bg-accent mx-auto rounded-full shadow-lg"></div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {syllabusData.map((item, i) => (
-              <div key={i} className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 shadow-xl hover:bg-white/20 transition-all group">
-                <div className="flex items-center gap-6 mb-6">
-                  <div className="bg-white text-primary group-hover:scale-110 transition-transform duration-500 w-12 h-12 rounded-full flex items-center justify-center font-black text-xl shadow-lg">
-                    {item.class}
-                  </div>
-                  <h4 className="font-black text-white text-2xl drop-shadow-sm">Class {item.class}</h4>
-                </div>
-                <p className="text-sm text-blue-100 font-semibold leading-relaxed">{item.subjects}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Why Us Section */}
       <section id="why-us" className="py-32 bg-slate-50 text-slate-900 relative overflow-hidden">
