@@ -531,7 +531,7 @@ export default function App() {
               className="relative hidden lg:block h-[700px] w-full"
             >
               <div className="relative z-10 w-full h-full rounded-[3rem] overflow-hidden glass-card p-3 border border-slate-200 animate-float shadow-2xl shadow-slate-300">
-                <img src="/images/professional-students.png" alt="JMD Saksham Classes Aligarh - Best Coaching in Aligarh" className="w-full h-full object-cover rounded-[2.5rem]" />
+                <img src="/images/jmd-saksham-students.jpg" alt="JMD Saksham Classes Aligarh - Best Coaching in Aligarh" className="w-full h-full object-cover rounded-[2.5rem]" />
               </div>
               <div className="absolute -top-10 -right-10 w-64 h-64 bg-accent/20 rounded-full blur-[80px]"></div>
               
@@ -1094,7 +1094,7 @@ export default function App() {
             >
               <div className="relative z-10 rounded-[4rem] overflow-hidden shadow-2xl border border-slate-200 group bg-white">
                 <img 
-                  src="/images/professional-students.png" 
+                  src="/images/jmd-saksham-students.jpg" 
                   alt="Sainik School Coaching Aligarh - Modern Classroom" 
                   className="w-full object-cover aspect-[4/5] group-hover:scale-105 transition-transform duration-1000"
                   referrerPolicy="no-referrer"
