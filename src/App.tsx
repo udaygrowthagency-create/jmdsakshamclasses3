@@ -840,7 +840,7 @@ export default function App() {
                 {[
                   { title: "Classes 4th to 7th", desc: "2 Hours/Day | Maths, Science, Social Science, English Grammar", icon: <BookOpen className="w-6 h-6" /> },
                   { title: "Classes 8th to 10th", desc: "2 Hours/Day | Maths, Science, Social Science, English, English Grammar", icon: <Users className="w-6 h-6" /> },
-                  { title: "Session Duration", desc: "7th April 2025 to 31st March 2026", icon: <Calendar className="w-6 h-6" /> }
+                  { title: "Session Duration", desc: "7th April 2026 to 31st March 2027", icon: <Calendar className="w-6 h-6" /> }
                 ].map((item, idx) => (
                   <motion.div 
                     key={idx}
