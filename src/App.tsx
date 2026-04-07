@@ -615,12 +615,11 @@ export default function App() {
                 <div className="space-y-6">
                   <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
                     <p className="text-primary font-bold text-[10px] uppercase tracking-[0.2em] mb-1">Exam Date</p>
-                    <p className="text-2xl font-black text-slate-900">8 Feb 2026</p>
-                    <p className="text-sm font-semibold text-slate-500">Sunday, 10:00 AM</p>
+                    <p className="text-xl font-black text-slate-900 tracking-wider text-accent uppercase">Coming Soon</p>
                   </div>
                   <div className="bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
                     <p className="text-primary font-bold text-[10px] uppercase tracking-[0.2em] mb-1">Last Date to Apply</p>
-                    <p className="text-2xl font-black text-slate-900">6 Feb 2026</p>
+                    <p className="text-xl font-black text-slate-900 tracking-wider text-accent uppercase">Coming Soon</p>
                   </div>
                 </div>
               )},
