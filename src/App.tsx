@@ -1198,7 +1198,7 @@ export default function App() {
                   />
                   <div className="absolute -bottom-6 -left-6 -right-6 bg-white p-8 rounded-[2.5rem] border border-slate-100 z-20 shadow-xl">
                     <p className="font-black text-2xl tracking-tight text-slate-900 mb-1">D.K. Singh</p>
-                    <p className="text-[10px] text-primary font-black uppercase tracking-[0.3em]">Director & Visionary</p>
+                    <p className="text-[10px] text-primary font-black uppercase tracking-[0.3em]">Founder & Director</p>
                   </div>
                 </div>
               </div>
