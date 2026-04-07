@@ -778,7 +778,7 @@ export default function App() {
               </h2>
               <div className="w-20 h-1.5 bg-accent mx-auto rounded-full mb-8 shadow-sm"></div>
               <p className="text-slate-600 max-w-2xl mx-auto text-xl font-medium leading-relaxed">
-                Rank-wise scholarship on tuition fees for session 2025-26. We reward excellence.
+                Scholarship on tuition fees for session 2026-27. We reward excellence.
               </p>
             </motion.div>
           </div>
