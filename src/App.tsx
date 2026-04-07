@@ -183,74 +183,46 @@ export default function App() {
   ];
 
   const courses = [
-    { 
-      title: 'Regular Coaching', 
-      desc: 'Class 4th to 10th (All Subjects) – Strong School & Board Foundation.', 
-      icon: <BookOpen className="w-8 h-8 text-primary" /> 
-    },
-    { 
-      title: 'AMU Entrance', 
-      desc: 'Preparation for Class 6th, 9th & 11th with complete syllabus coverage.', 
-      icon: <GraduationCap className="w-8 h-8 text-primary" /> 
-    },
-    { 
-      title: 'Sainik School Entrance', 
-      desc: 'Comprehensive coaching for written exams and interview guidance.', 
-      icon: <Award className="w-8 h-8 text-primary" /> 
-    },
-    { 
-      title: 'JNV Entrance Coaching', 
-      desc: 'Complete preparation for Jawahar Navodaya Vidyalaya entrance exams.', 
-      icon: <CheckCircle className="w-8 h-8 text-primary" /> 
-    },
-    { 
-      title: 'BHU & JMI Entrance', 
-      desc: 'Concept-based study with rigorous test series for BHU and JMI.', 
-      icon: <Trophy className="w-8 h-8 text-primary" /> 
-    },
-    { 
-      title: 'Olympiad Preparation', 
-      desc: 'Competitive level training for Maths, Science, and English Olympiads.', 
-      icon: <Users className="w-8 h-8 text-primary" /> 
-    },
-    { 
-      title: 'Weekly Test Series', 
-      desc: 'Regular assessment to track progress and improve performance.', 
-      icon: <Calendar className="w-8 h-8 text-primary" /> 
-    },
-    { 
-      title: 'Doubt Clearing Sessions', 
-      desc: 'Personalized attention to resolve every student\'s academic queries.', 
-      icon: <MessageCircle className="w-8 h-8 text-primary" /> 
-    },
+    { title: 'Foundation Courses (Class 4th–10th)', desc: 'Science, Mathematics, SST • NCERT + Advanced Level Practice • Regular Tests & Homework Monitoring', duration: '1 Year', icon: <BookOpen className="w-8 h-8" />, color: 'bg-emerald-50 text-emerald-600', border: 'border-emerald-100' },
+    { title: 'AMU Entrance (Class 6, 9, 11)', desc: 'Complete Syllabus Coverage • Previous Year Papers • Exam-Oriented Practice', duration: '1 Year', icon: <GraduationCap className="w-8 h-8" />, color: 'bg-blue-50 text-blue-600', border: 'border-blue-100' },
+    { title: 'Sainik School (AISSEE)', desc: 'Mathematics + Intelligence + GK', duration: '1 Year', icon: <Target className="w-8 h-8" />, color: 'bg-indigo-50 text-indigo-600', border: 'border-indigo-100' },
+    { title: 'Navodaya (JNVST)', desc: 'Reasoning + Maths + Language', duration: '1 Year', icon: <School className="w-8 h-8" />, color: 'bg-violet-50 text-violet-600', border: 'border-violet-100' },
+    { title: 'BHU School Entrance', desc: 'Structured & Target-Based Preparation', duration: '1 Year', icon: <Award className="w-8 h-8" />, color: 'bg-cyan-50 text-cyan-600', border: 'border-cyan-100' },
   ];
 
   const galleryImages = [
-    { title: 'Classroom Session', category: 'Classroom', img: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=800&auto=format&fit=crop' },
-    { title: 'Annual Prize Distribution', category: 'Events', img: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=800&auto=format&fit=crop' },
-    { title: 'Science Exhibition', category: 'Events', img: 'https://images.unsplash.com/photo-1564069114553-7215e1ff1890?q=80&w=800&auto=format&fit=crop' },
-    { title: 'Interactive Learning', category: 'Classroom', img: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=800&auto=format&fit=crop' },
-    { title: 'Modern Classroom Session', category: 'Classroom', img: '/images/modern-classroom.png' },
-    { title: 'Cultural Program', category: 'Events', img: 'https://images.unsplash.com/photo-1543807535-eceef0bc6599?q=80&w=800&auto=format&fit=crop' },
     { title: 'Topper Celebration', category: 'Achievements', img: '/images/achieve-2.jpeg' },
     { title: 'Award Ceremony', category: 'Achievements', img: '/images/achieve-3.jpeg' },
     { title: 'Medal Winners', category: 'Achievements', img: '/images/achieve-4.jpeg' },
     { title: 'Outstanding Performance', category: 'Achievements', img: '/images/achieve-5.jpeg' },
+    { title: 'Board Results 2025', category: 'Achievements', img: '/images/achieve-11.jpg' },
+    { title: 'Felicitation Ceremony', category: 'Achievements', img: '/images/achieve-12.jpg' },
+    { title: 'Parent Meeting', category: 'Achievements', img: '/images/achieve-13.jpg' },
+    { title: 'Annual Function', category: 'Achievements', img: '/images/achieve-14.jpg' },
+    { title: 'Star Achievers', category: 'Achievements', img: '/images/achieve-15.jpg' },
+    { title: 'Top Rankers', category: 'Achievements', img: '/images/achieve-16.jpg' },
+    { title: 'Special Awards', category: 'Achievements', img: '/images/achieve-17.jpg' },
+    { title: 'Honoring Excellence', category: 'Achievements', img: '/images/achieve-18.jpg' },
+    { title: 'Meritorious Awards', category: 'Achievements', img: '/images/achieve-19.jpg' },
+    { title: 'Academic Recognition', category: 'Achievements', img: '/images/achieve-20.jpg' },
+    { title: 'Student Success', category: 'Events', img: '/images/achieve-6.jpeg' },
+    { title: 'Proud Achievers', category: 'Events', img: '/images/achieve-7.jpeg' },
+    { title: 'Meritorious Students', category: 'Events', img: '/images/achieve-8.jpeg' },
+    { title: 'Academic Excellence', category: 'Events', img: '/images/achieve-9.jpeg' },
+    { title: 'Winning Moments', category: 'Events', img: '/images/achieve-10.jpeg' },
   ];
 
   const galleryCategories = [
     { name: 'Achievements', img: '/images/achieve-2.jpeg', count: galleryImages.filter(img => img.category === 'Achievements').length },
     { name: 'Classroom', img: '/images/modern-classroom.png', count: galleryImages.filter(img => img.category === 'Classroom').length },
-    { name: 'Events', img: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=800&auto=format&fit=crop', count: galleryImages.filter(img => img.category === 'Events').length },
+    { name: 'Events', img: '/images/achieve-6.jpeg', count: galleryImages.filter(img => img.category === 'Events').length },
   ];
 
   const results = [
-    { name: 'Aryan Sharma', exam: 'AMU Entrance', score: 'Selected (Class 9)', year: '2025' },
-    { name: 'Priya Verma', exam: 'Sainik School', score: 'Qualified', year: '2025' },
-    { name: 'Rahul Gupta', exam: 'Class 10 Board', score: '98.4%', year: '2024' },
-    { name: 'Sneha Singh', exam: 'JNV Entrance', score: 'Selected', year: '2024' },
-    { name: 'Harsh Vardhan', exam: 'AMU Entrance', score: 'Selected (Class 6)', year: '2025' },
-    { name: 'Kavya Singh', exam: 'AMU Entrance', score: 'Selected (Class 9)', year: '2025' },
+    { title: 'Consistent Selections', desc: 'Consistent Student Selections Every Year' },
+    { title: '90%+ Scorers', desc: '90%+ Scorers in School Exams' },
+    { title: 'Significant Improvement', desc: 'Significant Improvement in Weak Students' },
+    { title: 'Strong Track Record', desc: 'Strong Track Record in Entrance Exams' },
   ];
 
   const testimonials = [
@@ -267,10 +239,12 @@ export default function App() {
   ];
 
   const whyUs = [
-    { title: 'Expert Faculty', desc: 'Highly experienced teachers from top institutions.', icon: <Users className="w-10 h-10" /> },
-    { title: 'Doubt Sessions', desc: 'Regular + special sessions to ensure no student is left behind.', icon: <MessageCircle className="w-10 h-10" /> },
-    { title: 'Test Series', desc: 'Weekly test series with detailed performance analysis.', icon: <Trophy className="w-10 h-10" /> },
-    { title: 'Offline Focus', desc: 'Main mode is offline classroom teaching for better interaction.', icon: <MapPin className="w-10 h-10" /> },
+    { title: 'Experienced & Dedicated Faculty', desc: 'Learn from highly qualified teachers dedicated to your success.', icon: <Users className="w-10 h-10" /> },
+    { title: 'Concept-Based Learning', desc: 'Focus on understanding core concepts (No Rattafication).', icon: <BookOpen className="w-10 h-10" /> },
+    { title: 'Special Attention', desc: 'Personalized guidance and focus given to weak students.', icon: <CheckCircle className="w-10 h-10" /> },
+    { title: 'Weekly Tests & Reports', desc: 'Regular assessments and performance reports to track progress.', icon: <Trophy className="w-10 h-10" /> },
+    { title: 'Proven Results', desc: 'A consistent track record of success in School & Entrance Exams.', icon: <Award className="w-10 h-10" /> },
+    { title: 'Personal Mentorship', desc: 'One-on-one sessions to resolve doubts and provide academic mentorship.', icon: <MessageCircle className="w-10 h-10" /> },
   ];
 
   const handleSubmit = (e: FormEvent) => {
@@ -301,10 +275,16 @@ export default function App() {
       <div className="hidden lg:block bg-primary text-white/90 py-3 border-b border-primary-dark/30 relative z-[60] shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm font-medium tracking-wide">
           <div className="flex items-center space-x-6">
-            <a href="tel:+919756399884" className="flex items-center gap-2 hover:text-white transition-colors group">
-              <Phone className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
-              <span>+91 9756399884</span>
-            </a>
+            <div className="flex items-center gap-6">
+              <a href="tel:+919756399884" className="flex items-center gap-2 hover:text-white transition-colors group">
+                <Phone className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
+                <span>+91 9756399884</span>
+              </a>
+              <a href="tel:+919756399888" className="flex items-center gap-2 hover:text-white transition-colors group">
+                <Phone className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
+                <span>+91 9756399888</span>
+              </a>
+            </div>
             <a href="mailto:jmdsaksham.info@gmail.com" className="flex items-center gap-2 hover:text-white transition-colors group">
               <Mail className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
               <span>jmdsaksham.info@gmail.com</span>
@@ -359,7 +339,7 @@ export default function App() {
               ))}
               <div className="pl-4 ml-4 border-l border-slate-200">
                 <RippleButton 
-                  href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+                  href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary text-white hover:bg-primary-dark px-8 py-2.5 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all outline-none"
@@ -416,7 +396,7 @@ export default function App() {
                 ))}
                 <div className="pt-4 px-4">
                   <RippleButton 
-                    href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+                    href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsMenuOpen(false)}
@@ -431,8 +411,8 @@ export default function App() {
         </AnimatePresence>
       </nav>
 
-      {/* About Us Section (Replaces Home) */}
-      <section id="about" className="pt-32 pb-20 md:pt-56 md:pb-40 bg-white relative overflow-hidden min-h-screen flex items-center">
+      {/* Home / Hero Section */}
+      <section id="home" className="pt-32 pb-20 md:pt-56 md:pb-40 bg-white relative overflow-hidden min-h-screen flex items-center">
         {/* Abstract Light Background Elements */}
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] pointer-events-none"></div>
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-bl from-primary/10 to-transparent rounded-full blur-[100px] translate-x-1/4 -translate-y-1/4"></div>
@@ -489,16 +469,16 @@ export default function App() {
                   hidden: { opacity: 0, y: 30 },
                   visible: { opacity: 1, y: 0 }
                 }}
-                className="text-5xl md:text-8xl font-black mb-8 leading-[1.1] tracking-tighter text-slate-900"
+                className="text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-[1.1] tracking-tighter text-slate-900"
               >
-                Shaping <br />
-                <span className="text-gradient">Bright Futures</span> <br />
-                in Aligarh
+                🎯 <span className="text-gradient">Marks Matter</span> – <br />
+                Achieve Excellence <br />
+                <span className="text-3xl md:text-4xl text-slate-700">with JMD Saksham Classes</span>
               </motion.h1>
               
               <div className="space-y-6 text-slate-600 text-lg leading-relaxed mb-12 max-w-xl font-medium">
-                <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
-                  JMD Saksham Classes is the most trusted coaching centre in Aligarh, established in 2012. Located on GT Road, we have shaped the academic futures of exceptional students for over 12 years.
+                <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-xl md:text-2xl font-bold text-slate-800 leading-snug">
+                  Building Strong Academic Foundation for Classes 4th to 10th (CBSE & AMU Board) + Entrance Preparation
                 </motion.p>
                 
                 <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}>
@@ -518,11 +498,11 @@ export default function App() {
               >
                 <div className="flex items-start gap-4">
                   <MapPin className="w-6 h-6 text-primary mt-0.5 shrink-0" />
-                  <p className="text-slate-700 font-bold text-sm md:text-base">Ramsnehi Dham, Near Suman Hospital, Etah Chungi, GT Road, Aligarh – 202001</p>
+                  <p className="text-slate-700 font-bold text-sm md:text-base">JMD Saksham Classes, Etah Chungi, GT Road, Aligarh, Uttar Pradesh – 202001, India</p>
                 </div>
                 <div className="flex items-center gap-4">
                   <Phone className="w-6 h-6 text-primary shrink-0" />
-                  <p className="text-slate-700 font-bold text-sm md:text-base">+91 9756399884</p>
+                  <p className="text-slate-700 font-bold text-sm md:text-base">+91 9756399884, +91 9756399888</p>
                 </div>
               </motion.div>
             </motion.div>
@@ -550,6 +530,38 @@ export default function App() {
               </div>
             </motion.div>
           </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-32 bg-white relative overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <span className="inline-block px-4 py-1.5 bg-primary/10 text-primary rounded-full text-xs font-bold uppercase tracking-[0.2em] mb-6 border border-primary/20">
+              Know More
+            </span>
+            <h2 className="text-5xl md:text-6xl font-black mb-8 tracking-tighter leading-[1.05] text-slate-900">
+              About <span className="text-gradient">JMD Saksham Classes</span>
+            </h2>
+            <div className="w-24 h-1.5 bg-accent mx-auto rounded-full mb-12 shadow-sm"></div>
+            
+            <div className="space-y-8 text-slate-600 text-xl font-medium leading-relaxed">
+              <p>
+                JMD Saksham Classes is a trusted coaching institute in Aligarh dedicated to building strong academic foundations for students from Class 4th to 10th.
+              </p>
+              <p>
+                We focus on concept clarity, discipline, and continuous practice to help students excel in school exams and competitive entrance tests such as AMU, Sainik School, Navodaya, and BHU.
+              </p>
+              <p className="font-bold text-slate-800 text-2xl border-l-4 border-primary pl-6 py-2">
+                Our mission is to guide students from basics to brilliance and make them confident, independent learners.
+              </p>
+            </div>
+          </motion.div>
         </div>
       </section>
 
@@ -642,7 +654,7 @@ export default function App() {
                   </div>
                   <div className="bg-white/10 backdrop-blur-md p-6 rounded-3xl border border-white/20">
                     <p className="text-[10px] font-bold uppercase tracking-[0.2em] text-accent mb-2">Support Call</p>
-                    <p className="text-3xl font-black text-white">9756399884</p>
+                    <p className="text-xl font-black text-white tracking-widest mt-1">9756399884<br/>9756399888</p>
                   </div>
                 </div>
               </div>
@@ -700,7 +712,7 @@ export default function App() {
             </motion.div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {courses.map((course, index) => (
               <motion.div 
                 key={index}
@@ -708,16 +720,16 @@ export default function App() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-50px" }}
                 transition={{ delay: index * 0.1, duration: 0.6 }}
-                className="group glass-card p-10 rounded-[3rem] glass-card-hover relative overflow-hidden"
+                className={`group glass-card p-10 rounded-[3rem] glass-card-hover relative overflow-hidden border ${course.border}`}
               >
                 <div className="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-transform duration-700 blur-2xl"></div>
-                <div className="bg-slate-50 w-20 h-20 rounded-3xl flex items-center justify-center mb-8 border border-slate-100 group-hover:border-primary/20 group-hover:bg-primary/5 transition-all duration-500 shadow-inner">
-                  {React.cloneElement(course.icon as React.ReactElement, { className: "w-8 h-8 text-slate-400 group-hover:text-primary transition-colors" })}
+                <div className={`w-20 h-20 rounded-3xl flex items-center justify-center mb-8 border ${course.border} ${course.color} transition-all duration-500 shadow-inner`}>
+                  {React.cloneElement(course.icon as React.ReactElement, { className: "w-8 h-8" })}
                 </div>
                 <h3 className="text-2xl font-black mb-4 text-slate-900 group-hover:text-primary transition-colors">{course.title}</h3>
                 <p className="text-slate-500 mb-8 leading-relaxed text-sm font-medium">{course.desc}</p>
                 <a 
-                  href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+                  href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 font-bold text-slate-600 group-hover:gap-6 transition-all group-hover:text-primary"
@@ -890,48 +902,18 @@ export default function App() {
                 <p className="text-slate-600 text-xl font-medium leading-relaxed max-w-2xl">Consistently producing top results in AMU, JMI, and Board Exams. Your success is our legacy.</p>
               </motion.div>
               
-              {/* AMU Selections Highlight */}
-              <motion.div 
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.8 }}
-                className="bg-white rounded-[4rem] p-10 md:p-16 border border-slate-200 text-center relative overflow-hidden shadow-xl"
-              >
-                <div className="absolute top-0 right-0 w-64 h-64 bg-accent/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-[80px]"></div>
-                <div className="max-w-2xl mx-auto relative z-10">
-                  <h3 className="text-4xl md:text-5xl font-black text-slate-900 mb-8 tracking-tight">AMU Selection <span className="text-primary">2024-25</span></h3>
-                  <p className="text-xl text-slate-600 mb-12 leading-relaxed font-medium">
-                    We are proud to announce that <span className="font-black text-primary text-2xl">15+ Students</span> from JMD SAKSHAM CLASSES have been selected for AMU Class VI & IX Entrance this year!
-                  </p>
-                  <div className="grid grid-cols-2 gap-8 max-w-md mx-auto">
-                    <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 group hover:-translate-y-1 transition-transform duration-500 shadow-sm hover:shadow-lg hover:border-primary/20">
-                      <p className="text-5xl font-black text-primary mb-2">
-                        <Counter value={500} suffix="+" />
-                      </p>
-                      <p className="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em] group-hover:text-slate-700">Students Enrolled</p>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {results.map((stat, index) => (
+                  <div key={index} className="bg-white rounded-[2rem] p-6 border border-slate-100 shadow-xl shadow-slate-200/20 text-center relative overflow-hidden group hover:-translate-y-2 transition-all duration-300 flex flex-col items-center justify-center h-full">
+                    <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="text-primary mb-4 p-3 bg-primary/10 rounded-full group-hover:scale-110 transition-transform">
+                      <TrendingUp className="w-8 h-8" />
                     </div>
-                    <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 group hover:-translate-y-1 transition-transform duration-500 shadow-sm hover:shadow-lg hover:border-primary/20">
-                      <p className="text-5xl font-black text-primary mb-2">
-                        <Counter value={12} suffix="+" />
-                      </p>
-                      <p className="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em] group-hover:text-slate-700">Years Excellence</p>
-                    </div>
-                    <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 group hover:-translate-y-1 transition-transform duration-500 shadow-sm hover:shadow-lg hover:border-primary/20">
-                      <p className="text-5xl font-black text-primary mb-2">
-                        <Counter value={95} suffix="%" />
-                      </p>
-                      <p className="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em] group-hover:text-slate-700">Success Results</p>
-                    </div>
-                    <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 group hover:-translate-y-1 transition-transform duration-500 shadow-sm hover:shadow-lg hover:border-primary/20">
-                      <p className="text-5xl font-black text-primary mb-2">
-                        <Counter value={8} suffix="+" />
-                      </p>
-                      <p className="text-[10px] text-slate-500 font-bold uppercase tracking-[0.2em] group-hover:text-slate-700">Courses Offered</p>
-                    </div>
+                    <h3 className="text-xl font-bold text-slate-800 mb-2">{stat.title}</h3>
+                    <p className="text-slate-600 font-medium text-sm leading-relaxed">{stat.desc}</p>
                   </div>
-                </div>
-              </motion.div>
+                ))}
+              </div>
             </div>
 
             <div className="lg:col-span-1">
@@ -1218,7 +1200,7 @@ export default function App() {
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-primary/10 rounded-[3rem] blur-2xl group-hover:bg-primary/20 transition-colors duration-500"></div>
                   <img 
-                    src="https://picsum.photos/seed/director2/600/800" 
+                    src="/images/director.png" 
                     alt="D.K. Singh - Director of JMD Saksham Classes Aligarh" 
                     className="rounded-[3rem] shadow-2xl border-8 border-white w-full relative z-10 group-hover:scale-[1.02] transition-transform duration-700"
                     referrerPolicy="no-referrer"
@@ -1446,7 +1428,7 @@ export default function App() {
 
               <div className="mb-20 rounded-[3rem] overflow-hidden bg-white border border-slate-200 shadow-sm p-4 relative z-20">
                 <iframe 
-                  src="https://maps.google.com/maps?q=Arya+Nagar+Colony,+Near+Mansarovar,+Ramghat+Road,+Aligarh&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                  src="https://maps.google.com/maps?q=Ramsnehi+Dham,+Near+Suman+Hospital,+Etah+Chungi,+Aligarh&t=&z=16&ie=UTF8&iwloc=&output=embed" 
                   width="100%" 
                   height="400" 
                   style={{ border: 0 }} 
@@ -1457,11 +1439,9 @@ export default function App() {
                 ></iframe>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-24">
+              <div className="flex justify-center mb-24">
                 {[
-                  { title: "Head Office", desc: "Arya Nagar Colony, Near Mansarovar, Ramghat Road, Aligarh" },
-                  { title: "Branch Office 1", desc: "Ramsnehi Dham, Near Suman Hospital, Etah Chungi, Aligarh" },
-                  { title: "Branch Office 2", desc: "Ozone City, Gate No. -1, Mahua Khera Road, Ozone City, Aligarh" }
+                  { title: "Head Office", desc: "JMD Saksham Classes, Etah Chungi, GT Road, Aligarh, Uttar Pradesh – 202001, India" }
                 ].map((center, idx) => (
                   <motion.div 
                     key={idx}
@@ -1469,7 +1449,7 @@ export default function App() {
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ delay: idx * 0.1 }}
-                    className="flex flex-col items-center text-center group"
+                    className="flex flex-col items-center text-center group max-w-sm"
                   >
                     <div className="bg-white w-16 h-16 rounded-2xl flex items-center justify-center mb-6 border border-slate-200 group-hover:bg-primary group-hover:text-white transition-all duration-500 group-hover:scale-110 group-hover:-rotate-3 shadow-sm text-primary">
                       <MapPin className="w-8 h-8" />
@@ -1491,7 +1471,7 @@ export default function App() {
                     <Phone className="w-8 h-8" />
                   </div>
                   <h4 className="font-black text-2xl mb-2 text-slate-900">Call Us</h4>
-                  <p className="text-gradient text-xl font-black">+91 9756399884</p>
+                  <p className="text-gradient text-xl font-black">+91 9756399884, 9756399888</p>
                 </motion.div>
                 <motion.div 
                   initial={{ opacity: 0, x: 20 }}
@@ -1512,7 +1492,7 @@ export default function App() {
                   <h4 className="font-bold mb-4 text-primary text-lg">Quick Support</h4>
                   <p className="text-slate-600 mb-8 font-medium">Need instant help? Connect with our counselor on WhatsApp.</p>
                   <a 
-                    href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+                    href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 rounded-full font-bold hover:shadow-lg hover:shadow-[#25D366]/30 hover:-translate-y-1 transition-all duration-300"
@@ -1538,15 +1518,16 @@ export default function App() {
               <p className="text-slate-200 leading-relaxed font-semibold mb-10">
                 Aligarh's premier coaching institute for AMU, JMI, Sainik School, and JNV entrance exams. Empowering students since 2011.
               </p>
+              <h4 className="font-bold mb-6 text-white text-lg">Follow us on YouTube & Facebook</h4>
               <div className="flex gap-4">
-                {[Facebook, Instagram, Youtube, Twitter].map((Icon, idx) => (
+                {[Youtube, Facebook].map((Icon, idx) => (
                   <motion.a 
                     key={idx}
                     href="#" 
                     whileHover={{ y: -5, scale: 1.1 }}
                     className="bg-white/5 p-3 rounded-xl border border-white/10 hover:bg-accent hover:text-slate-900 transition-all shadow-lg"
                   >
-                    <Icon className="w-5 h-5" />
+                    <Icon className="w-6 h-6" />
                   </motion.a>
                 ))}
               </div>
@@ -1558,11 +1539,16 @@ export default function App() {
                 Quick Links
               </h4>
               <ul className="space-y-4">
-                {['About Us', 'Courses', 'SAPT 2026', 'Results', 'Gallery', 'Contact'].map((link) => (
-                  <li key={link}>
-                    <a href={`#${link.toLowerCase().replace(' ', '-')}`} className="text-slate-200 hover:text-accent transition-colors font-semibold flex items-center gap-2 group">
+                {[
+                  { name: 'Home', href: '#home' },
+                  { name: 'About', href: '#about' },
+                  { name: 'Courses', href: '#courses' },
+                  { name: 'Contact', href: '#contact' }
+                ].map((link) => (
+                  <li key={link.name}>
+                    <a href={link.href} className="text-slate-200 hover:text-accent transition-colors font-semibold flex items-center gap-2 group">
                       <div className="w-1.5 h-1.5 bg-accent rounded-full opacity-0 group-hover:opacity-100 transition-all"></div>
-                      {link}
+                      {link.name}
                     </a>
                   </li>
                 ))}
@@ -1596,13 +1582,13 @@ export default function App() {
                   <div className="bg-white/5 p-2.5 rounded-xl text-accent border border-white/10 group-hover:bg-accent group-hover:text-slate-900 transition-all">
                     <MapPin className="w-5 h-5" />
                   </div>
-                  <span className="text-slate-200 text-sm leading-relaxed font-semibold">Arya Nagar Colony, Near Mansarovar, Ramghat Road, Aligarh</span>
+                  <span className="text-slate-200 text-sm leading-relaxed font-semibold">JMD Saksham Classes, Etah Chungi, GT Road, Aligarh, Uttar Pradesh – 202001, India</span>
                 </li>
                 <li className="flex items-center gap-4 group">
                   <div className="bg-white/5 p-2.5 rounded-xl text-accent border border-white/10 group-hover:bg-accent group-hover:text-slate-900 transition-all">
                     <Phone className="w-5 h-5" />
                   </div>
-                  <span className="text-slate-200 text-sm font-bold">+91 9756399884</span>
+                  <span className="text-slate-200 text-sm font-bold">+91 9756399884, +91 9756399888</span>
                 </li>
                 <li className="flex items-center gap-4 group">
                   <div className="bg-white/5 p-2.5 rounded-xl text-accent border border-white/10 group-hover:bg-accent group-hover:text-slate-900 transition-all">
@@ -1615,7 +1601,7 @@ export default function App() {
           </div>
           
           <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-400 text-sm font-medium">
-            <p>&copy; {new Date().getFullYear()} JMD Saksham Classes Aligarh. All Rights Reserved.</p>
+            <p>&copy; 2026 JMD Saksham Classes</p>
             <div className="flex gap-8">
               <a href="#" className="hover:text-accent transition-colors">Privacy Policy</a>
               <a href="#" className="hover:text-accent transition-colors">Terms of Service</a>
@@ -1626,7 +1612,7 @@ export default function App() {
 
       {/* Floating WhatsApp Button */}
       <motion.a 
-        href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+        href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
         target="_blank" 
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
