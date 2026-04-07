@@ -213,6 +213,10 @@ export default function App() {
     { title: 'Meritorious Students', category: 'Events', img: '/images/achieve-8.jpeg' },
     { title: 'Academic Excellence', category: 'Events', img: '/images/achieve-9.jpeg' },
     { title: 'Winning Moments', category: 'Events', img: '/images/achieve-10.jpeg' },
+    { title: 'Focused Study', category: 'Classroom', img: '/images/classroom-1.jpeg' },
+    { title: 'Examination', category: 'Classroom', img: '/images/classroom-2.jpeg' },
+    { title: 'Institute Front', category: 'Classroom', img: '/images/classroom-3.jpeg' },
+    { title: 'Dedicated Students', category: 'Classroom', img: '/images/classroom-4.jpeg' },
   ];
 
   const galleryCategories = [
