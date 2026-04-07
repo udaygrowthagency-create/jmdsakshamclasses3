@@ -28,7 +28,10 @@ import {
   Facebook,
   Instagram,
   Youtube,
-  Twitter
+  Twitter,
+  Target,
+  School,
+  TrendingUp
 } from 'lucide-react';
 import { motion, AnimatePresence, useScroll, useSpring, useMotionValue, useTransform, animate } from 'motion/react';
 
@@ -223,6 +226,15 @@ export default function App() {
     { title: '90%+ Scorers', desc: '90%+ Scorers in School Exams' },
     { title: 'Significant Improvement', desc: 'Significant Improvement in Weak Students' },
     { title: 'Strong Track Record', desc: 'Strong Track Record in Entrance Exams' },
+  ];
+
+  const topRankers = [
+    { name: 'Aditi Jain', exam: 'CBSE 10th', year: '2024', score: '98.4%' },
+    { name: 'Rohan Gupta', exam: 'AMU 11th', year: '2023', score: 'Rank 12' },
+    { name: 'Sneha Sharma', exam: 'Sainik School', year: '2024', score: 'Selected' },
+    { name: 'Aryan Dev', exam: 'CBSE 10th', year: '2024', score: '96.8%' },
+    { name: 'Megha Singh', exam: 'Navodaya', year: '2023', score: 'Selected' },
+    { name: 'Kabir Das', exam: 'AMU 6th', year: '2024', score: 'Rank 8' },
   ];
 
   const testimonials = [
@@ -1005,7 +1017,7 @@ export default function App() {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {results.map((topper, index) => (
+            {topRankers.map((topper, index) => (
               <motion.div 
                 key={index}
                 initial={{ opacity: 0, scale: 0.9 }}
