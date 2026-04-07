@@ -355,7 +355,7 @@ export default function App() {
               ))}
               <div className="pl-4 ml-4 border-l border-slate-200">
                 <RippleButton 
-                  href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+                  href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary text-white hover:bg-primary-dark px-8 py-2.5 rounded-full font-bold shadow-md hover:shadow-xl hover:-translate-y-0.5 transition-all outline-none"
@@ -412,7 +412,7 @@ export default function App() {
                 ))}
                 <div className="pt-4 px-4">
                   <RippleButton 
-                    href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+                    href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsMenuOpen(false)}
@@ -745,7 +745,7 @@ export default function App() {
                 <h3 className="text-2xl font-black mb-4 text-slate-900 group-hover:text-primary transition-colors">{course.title}</h3>
                 <p className="text-slate-500 mb-8 leading-relaxed text-sm font-medium">{course.desc}</p>
                 <a 
-                  href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+                  href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-3 font-bold text-slate-600 group-hover:gap-6 transition-all group-hover:text-primary"
@@ -1508,7 +1508,7 @@ export default function App() {
                   <h4 className="font-bold mb-4 text-primary text-lg">Quick Support</h4>
                   <p className="text-slate-600 mb-8 font-medium">Need instant help? Connect with our counselor on WhatsApp.</p>
                   <a 
-                    href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+                    href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 rounded-full font-bold hover:shadow-lg hover:shadow-[#25D366]/30 hover:-translate-y-1 transition-all duration-300"
@@ -1628,7 +1628,7 @@ export default function App() {
 
       {/* Floating WhatsApp Button */}
       <motion.a 
-        href="https://wa.me/918869863837?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
+        href="https://wa.me/919756399884?text=Hello%20JMD%20Saksham%20Classes,%20I%20am%20interested%20in%20admission.%20Please%20provide%20more%20details." 
         target="_blank" 
         rel="noopener noreferrer"
         initial={{ scale: 0, opacity: 0 }}
