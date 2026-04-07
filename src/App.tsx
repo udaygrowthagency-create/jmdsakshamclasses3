@@ -1536,10 +1536,15 @@ export default function App() {
               </p>
               <h4 className="font-bold mb-6 text-white text-lg">Follow us on YouTube & Facebook</h4>
               <div className="flex gap-4">
-                {[Youtube, Facebook].map((Icon, idx) => (
+                {[
+                  { Icon: Youtube, href: "https://youtube.com/@jmdsakshamclasses?si=zGf-_NnyK4LXS7ng" },
+                  { Icon: Facebook, href: "https://www.facebook.com/JMDSaksham" }
+                ].map(({ Icon, href }, idx) => (
                   <motion.a 
                     key={idx}
-                    href="#" 
+                    href={href} 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     whileHover={{ y: -5, scale: 1.1 }}
                     className="bg-white/5 p-3 rounded-xl border border-white/10 hover:bg-accent hover:text-slate-900 transition-all shadow-lg"
                   >
