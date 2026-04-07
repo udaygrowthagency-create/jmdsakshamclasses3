@@ -1417,17 +1417,30 @@ export default function App() {
                 <div className="w-20 h-1.5 bg-accent mx-auto rounded-full shadow-sm"></div>
               </div>
 
-              <div className="mb-20 rounded-[3rem] overflow-hidden bg-white border border-slate-200 shadow-sm p-4 relative z-20">
-                <iframe 
-                  src="https://maps.google.com/maps?q=Ramsnehi+Dham,+Near+Suman+Hospital,+Etah+Chungi,+Aligarh&t=&z=16&ie=UTF8&iwloc=&output=embed" 
-                  width="100%" 
-                  height="400" 
-                  style={{ border: 0 }} 
-                  allowFullScreen={false} 
-                  loading="lazy" 
-                  referrerPolicy="no-referrer-when-downgrade" 
-                  className="rounded-[2rem] w-full h-[300px] md:h-[450px]"
-                ></iframe>
+              <div className="mb-20">
+                <div className="rounded-[3rem] overflow-hidden bg-white border border-slate-200 shadow-sm p-4 relative z-20 mb-6">
+                  <iframe 
+                    src="https://maps.google.com/maps?q=Ramsnehi+Dham,+Near+Suman+Hospital,+Etah+Chungi,+Aligarh&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="400" 
+                    style={{ border: 0 }} 
+                    allowFullScreen={false} 
+                    loading="lazy" 
+                    referrerPolicy="no-referrer-when-downgrade" 
+                    className="rounded-[2rem] w-full h-[300px] md:h-[450px]"
+                  ></iframe>
+                </div>
+                <div className="flex justify-center">
+                  <a 
+                    href="https://maps.app.goo.gl/coop1FsUsteSxHhC9" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 bg-primary text-white hover:bg-primary/90 px-8 py-4 rounded-full font-bold shadow-lg hover:shadow-xl hover:shadow-primary/30 hover:-translate-y-1 transition-all duration-300"
+                  >
+                    <MapPin className="w-5 h-5" />
+                    Get Directions on Google Maps
+                  </a>
+                </div>
               </div>
 
               <div className="flex justify-center mb-24">
