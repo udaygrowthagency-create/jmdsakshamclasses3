@@ -233,11 +233,11 @@ export default function App() {
   ];
 
   const topRankers = [
-    { name: 'Aditi Jain', exam: 'CBSE 10th', year: '2024', score: '98.4%' },
+    { name: 'Aditi Jain', exam: 'CBSE 10th', year: '2024', score: '98.4%', img: '/images/girl-1.jpeg' },
     { name: 'Rohan Gupta', exam: 'AMU 11th', year: '2023', score: 'Rank 12' },
-    { name: 'Sneha Sharma', exam: 'Sainik School', year: '2024', score: 'Selected' },
+    { name: 'Sneha Sharma', exam: 'Sainik School', year: '2024', score: 'Selected', img: '/images/girl-2.jpeg' },
     { name: 'Aryan Dev', exam: 'CBSE 10th', year: '2024', score: '96.8%' },
-    { name: 'Megha Singh', exam: 'Navodaya', year: '2023', score: 'Selected' },
+    { name: 'Megha Singh', exam: 'Navodaya', year: '2023', score: 'Selected', img: '/images/girl-3.jpeg' },
     { name: 'Kabir Das', exam: 'AMU 6th', year: '2024', score: 'Rank 8' },
   ];
 
@@ -1027,7 +1027,16 @@ export default function App() {
                 transition={{ delay: index * 0.1 }}
                 className="group relative"
               >
-                <div className="bg-white rounded-[2rem] p-8 text-center border border-slate-200 group-hover:bg-primary transition-all duration-500 shadow-sm hover:shadow-2xl">
+                <div className="bg-white rounded-[2rem] p-8 text-center border border-slate-200 group-hover:bg-primary transition-all duration-500 shadow-sm hover:shadow-2xl flex flex-col items-center">
+                  <div className="w-24 h-24 mb-5 rounded-full overflow-hidden border-4 border-slate-100 group-hover:border-primary-light transition-all shadow-md relative group-hover:scale-105 duration-500">
+                    {topper.img ? (
+                      <img src={topper.img} alt={topper.name} className="w-full h-full object-cover" />
+                    ) : (
+                      <div className="w-full h-full bg-slate-50 flex items-center justify-center text-4xl font-black text-slate-300 group-hover:text-white/80 group-hover:bg-white/10 transition-colors">
+                        {topper.name.charAt(0)}
+                      </div>
+                    )}
+                  </div>
                   <h3 className="text-xl font-black mb-1 text-slate-900 group-hover:text-white transition-colors">{topper.name}</h3>
                   <p className="text-sm font-semibold text-slate-500 group-hover:text-blue-100 transition-colors mb-4">{topper.exam} ({topper.year})</p>
                   <div className="bg-slate-50 text-slate-900 group-hover:bg-white/20 group-hover:text-white py-2 px-6 rounded-full text-sm font-bold inline-block border border-slate-200 group-hover:border-white/30 transition-colors duration-500">
