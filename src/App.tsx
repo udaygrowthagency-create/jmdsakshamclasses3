@@ -1518,7 +1518,7 @@ export default function App() {
                 <img src="/images/logo.jpeg" alt="JMD Saksham Classes" className="h-32 md:h-40 w-auto object-contain rounded-xl" />
               </div>
               <p className="text-slate-200 leading-relaxed font-semibold mb-10">
-                Aligarh's premier coaching institute for AMU, JMI, Sainik School, and JNV entrance exams. Empowering students since 2011.
+                Aligarh's premier coaching institute for AMU, JMI, Sainik School, and JNV entrance exams. Empowering students since 2012.
               </p>
               <h4 className="font-bold mb-6 text-white text-lg">Follow us on YouTube & Facebook</h4>
               <div className="flex gap-4">
