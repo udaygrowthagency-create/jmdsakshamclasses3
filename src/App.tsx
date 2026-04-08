@@ -156,13 +156,13 @@ export default function App() {
   ];
 
   const scholarshipData = [
-    { class: '4th', total: 24000, r1_3: 15600, r4_10: 16800, r11_25: 18000, r26_50: 19200 },
-    { class: '5th', total: 26000, r1_3: 16900, r4_10: 18200, r11_25: 19500, r26_50: 20800 },
-    { class: '6th', total: 28000, r1_3: 18200, r4_10: 19600, r11_25: 21000, r26_50: 22400 },
-    { class: '7th', total: 30000, r1_3: 19500, r4_10: 21000, r11_25: 22500, r26_50: 24000 },
-    { class: '8th', total: 32000, r1_3: 20800, r4_10: 22400, r11_25: 24000, r26_50: 25600 },
-    { class: '9th', total: 34000, r1_3: 22100, r4_10: 23800, r11_25: 25500, r26_50: 27200 },
-    { class: '10th', total: 36000, r1_3: 23400, r4_10: 25200, r11_25: 27000, r26_50: 28800 },
+    { class: '4th', total: 24000, off30: 16800, off20: 19200, off10: 21600 },
+    { class: '5th', total: 26000, off30: 18200, off20: 20800, off10: 23400 },
+    { class: '6th', total: 28000, off30: 19600, off20: 22400, off10: 25200 },
+    { class: '7th', total: 30000, off30: 21000, off20: 24000, off10: 27000 },
+    { class: '8th', total: 32000, off30: 22400, off20: 25600, off10: 28800 },
+    { class: '9th', total: 34000, off30: 23800, off20: 27200, off10: 30600 },
+    { class: '10th', total: 36000, off30: 25200, off20: 28800, off10: 32400 },
   ];
 
   const syllabusData = [
@@ -778,7 +778,7 @@ export default function App() {
               </h2>
               <div className="w-20 h-1.5 bg-accent mx-auto rounded-full mb-8 shadow-sm"></div>
               <p className="text-slate-600 max-w-2xl mx-auto text-xl font-medium leading-relaxed">
-                Scholarship on tuition fees for session 2026-27. We reward excellence.
+                Scholarship on Tuition Fee after test score (in %). We reward excellence.
               </p>
             </motion.div>
           </div>
@@ -795,10 +795,9 @@ export default function App() {
                 <tr className="bg-slate-50 text-slate-600 border-b border-slate-200">
                   <th className="p-8 font-black uppercase tracking-widest text-xs">Class</th>
                   <th className="p-8 font-black uppercase tracking-widest text-xs">Total Fee</th>
-                  <th className="p-8 font-black uppercase tracking-widest text-xs text-primary">35% Off (R 1-3)</th>
-                  <th className="p-8 font-black uppercase tracking-widest text-xs">30% Off (R 4-10)</th>
-                  <th className="p-8 font-black uppercase tracking-widest text-xs">25% Off (R 11-25)</th>
-                  <th className="p-8 font-black uppercase tracking-widest text-xs">20% Off (R 26-50)</th>
+                  <th className="p-8 font-black uppercase tracking-widest text-xs text-primary">30% Off (91% - 100%)</th>
+                  <th className="p-8 font-black uppercase tracking-widest text-xs">20% Off (81% - 90%)</th>
+                  <th className="p-8 font-black uppercase tracking-widest text-xs">10% Off (71% - 80%)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
@@ -806,10 +805,9 @@ export default function App() {
                   <tr key={i} className="hover:bg-slate-50 transition-colors group">
                     <td className="p-8 font-black text-slate-900 text-xl">{row.class}</td>
                     <td className="p-8 text-slate-600 font-bold">₹{row.total.toLocaleString()}</td>
-                    <td className="p-8 font-black text-primary text-xl bg-primary/5 transition-colors">₹{row.r1_3.toLocaleString()}</td>
-                    <td className="p-8 text-slate-700 font-bold">₹{row.r4_10.toLocaleString()}</td>
-                    <td className="p-8 text-slate-700 font-bold">₹{row.r11_25.toLocaleString()}</td>
-                    <td className="p-8 text-slate-700 font-bold">₹{row.r26_50.toLocaleString()}</td>
+                    <td className="p-8 font-black text-primary text-xl bg-primary/5 transition-colors">₹{row.off30.toLocaleString()}</td>
+                    <td className="p-8 text-slate-700 font-bold">₹{row.off20.toLocaleString()}</td>
+                    <td className="p-8 text-slate-700 font-bold">₹{row.off10.toLocaleString()}</td>
                   </tr>
                 ))}
               </tbody>
