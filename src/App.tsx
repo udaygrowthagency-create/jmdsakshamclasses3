@@ -233,10 +233,10 @@ export default function App() {
   ];
 
   const topRankers = [
-    { name: 'Aditi Jain', exam: 'CBSE 10th', year: '2024', score: '98.4%', img: '/images/girl-1.jpeg' },
+    { name: 'Anushka Singh', exam: 'CBSE 10th', year: '2024', score: '98.4%', img: '/images/girl-1.jpeg' },
     { name: 'Rohan Gupta', exam: 'AMU 11th', year: '2023', score: 'Rank 12', img: '/images/boy-1.jpeg' },
     { name: 'Sneha Sharma', exam: 'Sainik School', year: '2024', score: 'Selected', img: '/images/girl-2.jpeg' },
-    { name: 'Aryan Dev', exam: 'CBSE 10th', year: '2024', score: '96.8%', img: '/images/boy-2.jpeg' },
+    { name: 'Jayvardhan', exam: 'CBSE 10th', year: '2024', score: '96.8%', img: '/images/boy-2.jpeg' },
     { name: 'Megha Singh', exam: 'Navodaya', year: '2023', score: 'Selected', img: '/images/girl-3.jpeg' },
     { name: 'Kabir Das', exam: 'AMU 6th', year: '2024', score: 'Rank 8', img: '/images/boy-3.jpeg' },
   ];
