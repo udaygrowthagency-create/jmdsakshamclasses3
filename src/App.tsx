@@ -795,9 +795,9 @@ export default function App() {
                 <tr className="bg-slate-50 text-slate-600 border-b border-slate-200">
                   <th className="p-8 font-black uppercase tracking-widest text-xs">Class</th>
                   <th className="p-8 font-black uppercase tracking-widest text-xs">Total Fee</th>
-                  <th className="p-8 font-black uppercase tracking-widest text-xs text-primary">30% Off (91% - 100%)</th>
-                  <th className="p-8 font-black uppercase tracking-widest text-xs">20% Off (81% - 90%)</th>
-                  <th className="p-8 font-black uppercase tracking-widest text-xs">10% Off (71% - 80%)</th>
+                  <th className="p-8 font-black uppercase tracking-widest text-xs text-primary">30% Off (91% - 100% previous year marks)</th>
+                  <th className="p-8 font-black uppercase tracking-widest text-xs">20% Off (81% - 90% previous year marks)</th>
+                  <th className="p-8 font-black uppercase tracking-widest text-xs">10% Off (71% - 80% previous year marks)</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-slate-100">
