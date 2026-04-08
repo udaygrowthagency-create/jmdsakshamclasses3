@@ -238,7 +238,7 @@ export default function App() {
     { name: 'Sneha Sharma', exam: 'Sainik School', year: '2024', score: 'Selected', img: '/images/girl-2.jpeg' },
     { name: 'Jayvardhan', exam: 'CBSE 10th', year: '2024', score: '96.8%', img: '/images/boy-2.jpeg' },
     { name: 'Mukt Angna Deep', exam: 'Navodaya', year: '2023', score: 'Selected', img: '/images/girl-3.jpeg' },
-    { name: 'Kabir Das', exam: 'AMU 6th', year: '2024', score: 'Rank 8', img: '/images/boy-3.jpeg' },
+    { name: 'Paras Pundhir', exam: 'AMU 6th', year: '2024', score: 'Rank 8', img: '/images/boy-3.jpeg' },
   ];
 
   const testimonials = [
