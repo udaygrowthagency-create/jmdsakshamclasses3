@@ -235,7 +235,7 @@ export default function App() {
   const topRankers = [
     { name: 'Anushka Singh', exam: 'AMU Board 10th', year: '2024', score: '95%', img: '/images/girl-1.jpeg' },
     { name: 'Arjun Singh', exam: 'AMU Entrance 9th', year: '2024', score: 'Rank 19', img: '/images/boy-1.jpeg' },
-    { name: 'Sneha Sharma', exam: 'Sainik School', year: '2024', score: 'Selected', img: '/images/girl-2.jpeg' },
+    { name: 'Lavanya Singh', exam: 'AMU Entrance 9th', year: '2024', score: 'Rank 2', img: '/images/girl-2.jpeg' },
     { name: 'Jaivardhan', exam: 'AMU Board 10th', year: '2024', score: '96%', img: '/images/boy-2.jpeg' },
     { name: 'Muktangana Deep', exam: '10th Board', year: '2024', score: '97%', img: '/images/girl-3.jpeg' },
     { name: 'Parav Pundhir', exam: 'AMU Entrance 6th', year: '2024', score: 'Rank 12', img: '/images/boy-3.jpeg' },
